@@ -1,7 +1,37 @@
-body{
-  background-color: forestgreen;
+{ margin: 0;
+padding: 0;
 }
-h1{
-  color: azure;
-  text-align: center
+body {
+  background-color: darkorange;
 }
+
+.grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: "title title" ". header" "sidebar content" "sidebar content" "footer footer"
+  ;
+}
+.title{
+  grid-row: title;
+  background-color: chartreuse;
+}
+.header{
+  grid-row: header;
+  background-color: chartreuse;
+
+}
+.sidebar{
+  grid-row: sidebar;
+  background-color: chartreuse;
+}
+.content{
+  grid-row: content;
+  background-color: chartreuse;
+}
+.footer{
+  grid-row: footer;
+  background-color: chartreuse;
+}
+
+
